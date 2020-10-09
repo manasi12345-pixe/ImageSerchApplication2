@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activity.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/relSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:background="@drawable/border"
+        tools:context=".activity.SearchActivity">
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:paddingLeft="20dp"
+        android:padding="5dp"
+       android:hint="Search"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@color/text_headline_color"
+        android:textColor="@color/text_headline_color"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toLeftOf="@+id/imgSearch"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icn_search_green"
+        app:tint="@color/text_headline_color"
+        android:layout_alignParentRight="true" />
+    </RelativeLayout>
+<GridView
+    android:id="@+id/gridSerachlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:numColumns="auto_fit"
+    android:scrollbars="none"
+    android:layout_below="@+id/relSearch"/>
+</RelativeLayout>
